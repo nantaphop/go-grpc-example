@@ -1,0 +1,11 @@
+syntax = "proto3";
+service Location {
+    rpc Print (LatLng) returns (StringResp) {}
+}
+message LatLng {
+    float lat = 1;
+    float lng = 2;
+}
+message StringResp {
+    string message = 1;
+}
